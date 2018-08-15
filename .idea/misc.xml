@@ -3,10 +3,16 @@
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
   <component name="CidrRootsConfiguration">
     <sourceRoots>
-      <file path="$PROJECT_DIR$/overload" />
-      <file path="$PROJECT_DIR$/reference" />
-      <file path="$PROJECT_DIR$/template" />
-      <file path="$PROJECT_DIR$/test" />
+      <file path="$PROJECT_DIR$/fiest_day" />
+      <file path="$PROJECT_DIR$/fiest_day/defultParam" />
+      <file path="$PROJECT_DIR$/fiest_day/namespace" />
+      <file path="$PROJECT_DIR$/fiest_day/new" />
+      <file path="$PROJECT_DIR$/fiest_day/overload" />
+      <file path="$PROJECT_DIR$/fiest_day/reference" />
+      <file path="$PROJECT_DIR$/fiest_day/string" />
+      <file path="$PROJECT_DIR$/fiest_day/struct" />
+      <file path="$PROJECT_DIR$/fiest_day/template" />
+      <file path="$PROJECT_DIR$/fiest_day/test" />
     </sourceRoots>
   </component>
 </project>

@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.9)
+project(cpp_study)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(main.cpp reference/main.cpp)
+add_executable(test.cpp test/test.cpp)
+add_executable(overload.cpp overload/overload.cpp)
+add_executable(template.cpp template/template.cpp)
+add_executable(param.cpp defultParam/param.cpp)
+add_executable(chongtu.cpp defultParam/chongtu.cpp)
+add_executable(string.cpp string/string.cpp)
+add_executable(struct.cpp struct/struct.cpp)
+add_executable(namespace.cpp namespace/namespace.cpp)
+add_executable(new.cpp new/new.cpp)

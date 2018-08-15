@@ -2,7 +2,7 @@
 // Created by Lc on 2018/8/15.
 //
 
-#include <cstdio>
+#include <iostream>
 
 int add(int a, int b)
 {
