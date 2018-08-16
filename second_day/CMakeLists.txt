@@ -3,5 +3,4 @@ project(cpp_study)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_subdirectory(fiest_day)
-add_subdirectory(second_day)
+add_executable(main class/main.cpp class/Demo.cpp class/Demo.h)
