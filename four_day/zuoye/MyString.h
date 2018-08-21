@@ -35,6 +35,7 @@ public:
     friend bool operator!=(const char *st1, const MyString &st2);
 
     //TODO: < * 3, > * 3, >= *3, <= *3, swap
+
 };
 
 
