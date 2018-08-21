@@ -7,4 +7,5 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(friend.cpp friend/friend.cpp)
 add_executable(foh friend_of_head/main.cpp friend_of_head/A.cpp
         friend_of_head/A.h friend_of_head/B.cpp friend_of_head/B.h)
-add_executable(exp1 opera_overload/main.cpp opera_overload/Unreal.cpp opera_overload/Unreal.h)
+add_executable(exp1 opera_overload/main.cpp opera_overload/Unreal.cpp)
+add_executable(Mystring zuoye/main.cpp zuoye/MyString.h zuoye/MyString.cpp)
