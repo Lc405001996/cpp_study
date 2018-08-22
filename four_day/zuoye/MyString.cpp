@@ -37,7 +37,7 @@ int MyString::getSize() const {
     return size;
 }
 
-std::ostream & operator << (std::ostream &os, MyString str) {
+std::ostream & operator << (std::ostream &os, const MyString &str) {
     os << str.data;
     return os;
 }
@@ -173,9 +173,28 @@ bool operator!=(const char *st1, const MyString &st2) {
     return false;
 }
 
-char MyString::operator[](int num) const {
-    if (num < this->size)
-        return this->data[num];
-    else
-        return 0;
+/**
+ *      const_reference
+ *      operator[] (size_type __pos) const _GLIBCXX_NOEXCEPT
+ *      {
+ *     _GLIBCXX_DEBUG_ASSERT(__pos <= size());
+ *     return _M_data()[__pos];
+ *      }
+ *
+ * @param num
+ * @return
+ */
+char &MyString::operator[](int num) const {
+//    if (num < this->size)
+    return this->data[num];
+}
+
+MyString &operator>>(std::istream &is, MyString &str) {
+    char tmp[1024] = {0};
+    is >> tmp;
+    delete []str.data;
+    str.size = static_cast<int>(strlen(tmp));
+    str.data = new char [str.size + 1];
+    strcpy(str.data, tmp);
+    return str;
 }
