@@ -40,15 +40,24 @@ int main()
         cout << "==================ok\n";
     }
 
-
+    for (int i = 0; i < 50; i++)
+    {
+        cout << st3[i];
+    }
     cout << "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=\n";
     string abc = "213";
     string qwe = "asd";
-    if (abc > "adf")
+//    if (abc > "adf")
+//    {
+//        cout << "fadf \n" ;
+//    } else
+//    {
+//        cout << "adfsadf\n";
+//    }
+
+    cout << "`````````````````" << endl;
+    for (int i = 0; i < 50; i++)
     {
-        cout << "fadf \n" ;
-    } else
-    {
-        cout << "adfsadf\n";
+        cout << abc[i]; //这种用法感觉不太好
     }
 }

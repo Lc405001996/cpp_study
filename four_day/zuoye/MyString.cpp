@@ -14,7 +14,7 @@ MyString::MyString(char *data) {
     } else
     {
         this->size = static_cast<int>(strlen(data));
-        this->data = new char(this->size);
+        this->data = new char[this->size + 1];
         strcpy(this->data, data);
     }
 }
@@ -22,7 +22,7 @@ MyString::MyString(char *data) {
 MyString operator+(const MyString &st1, const MyString &st2) {
     MyString st;
     st.size = st1.size + st2.size;
-    st.data = new char(st.size);
+    st.data = new char[st.size + 1];
     memset(st.data, 0, static_cast<size_t>(st.size));
     strcat(st.data, st1.data);
     strcat(st.data, st2.data);
@@ -50,7 +50,7 @@ MyString::MyString(const MyString &str) {
     } else
     {
         this->size = str.size;
-        this->data = new char(this->size);
+        this->data = new char[this->size + 1];
         strcpy(this->data, str.data);
     }
 }
@@ -59,11 +59,11 @@ MyString &MyString::operator=(char *str) {
     if (str == nullptr)
     {
         this->size = 0;
-        delete this->data;
+        delete []this->data;
         this->data = nullptr;
     } else
     {
-        delete this->data;
+        delete []this->data;
         this->size = static_cast<int>(strlen(str));
         this->data = new char (this->size);
         strcpy(this->data, str);
@@ -75,13 +75,13 @@ MyString &MyString::operator=(const MyString &str) {
     if (str.size == 0)
     {
         this->size = 0;
-        delete this->data;
+        delete []this->data;
         this->data = nullptr;
     } else
     {
-        delete this->data;
+        delete []this->data;
         this->size = str.size;
-        this->data = new char(this->size);
+        this->data = new char[this->size + 1];
         strcpy(this->data, str.data);
     }
     return (*this);
@@ -90,7 +90,7 @@ MyString &MyString::operator=(const MyString &str) {
 MyString operator+(const MyString &st1, const char *st2) {
     MyString st;
     st.size = static_cast<int>(st1.size + strlen(st2));
-    st.data = new char(st.size);
+    st.data = new char[st.size + 1];
     memset(st.data, 0, static_cast<size_t>(st.size));
     strcat(st.data, st1.data);
     strcat(st.data, st2);
@@ -100,7 +100,7 @@ MyString operator+(const MyString &st1, const char *st2) {
 MyString operator+(const char *st1, const MyString &st2) {
     MyString st;
     st.size = static_cast<int>(strlen(st1) + st2.size);
-    st.data = new char(st.size);
+    st.data = new char[st.size + 1];
     memset(st.data, 0, static_cast<size_t>(st.size));
     strcat(st.data, st1);
     strcat(st.data, st2.data);
@@ -171,4 +171,11 @@ bool operator!=(const char *st1, const MyString &st2) {
         }
     }
     return false;
+}
+
+char MyString::operator[](int num) const {
+    if (num < this->size)
+        return this->data[num];
+    else
+        return 0;
 }
