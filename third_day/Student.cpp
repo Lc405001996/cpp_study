@@ -2,32 +2,32 @@
 // Created by Lc on 2018/8/20.
 //
 
-#include "Student.h"
+#include "student.h"
 
-const string &Student::getName() const {
+const string &student::getName() const {
     return name;
 }
 
-void Student::setName(const string &name) {
-    Student::name = name;
+void student::setName(const string &name) {
+    student::name = name;
 }
 
-int Student::getAge() const {
+int student::getAge() const {
     return age;
 }
 
-void Student::setAge(int age) {
-    Student::age = age;
+void student::setAge(int age) {
+    student::age = age;
 }
 
-const string &Student::getSchool() const {
+const string &student::getSchool() const {
     return school;
 }
 
-void Student::setSchool(const string &school) {
-    Student::school = school;
+void student::setSchool(const string &school) {
+    student::school = school;
 }
 
-const int *Student::getScore() const {
+const int *student::getScore() const {
     return score;
 }

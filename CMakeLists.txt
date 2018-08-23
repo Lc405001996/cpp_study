@@ -3,7 +3,9 @@ project(cpp_study)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_subdirectory(fiest_day)
+add_subdirectory(first_day)
 add_subdirectory(second_day)
 add_subdirectory(third_day)
-add_subdirectory(four_day)
+add_subdirectory(fourth_day)
+add_subdirectory(fifth_day)
+add_subdirectory(sixth_day)

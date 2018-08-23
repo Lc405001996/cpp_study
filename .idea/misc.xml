@@ -3,18 +3,20 @@
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
   <component name="CidrRootsConfiguration">
     <sourceRoots>
-      <file path="$PROJECT_DIR$/fiest_day" />
-      <file path="$PROJECT_DIR$/fiest_day/defultParam" />
-      <file path="$PROJECT_DIR$/fiest_day/namespace" />
-      <file path="$PROJECT_DIR$/fiest_day/new" />
-      <file path="$PROJECT_DIR$/fiest_day/overload" />
-      <file path="$PROJECT_DIR$/fiest_day/reference" />
-      <file path="$PROJECT_DIR$/fiest_day/string" />
-      <file path="$PROJECT_DIR$/fiest_day/struct" />
-      <file path="$PROJECT_DIR$/fiest_day/template" />
-      <file path="$PROJECT_DIR$/fiest_day/test" />
-      <file path="$PROJECT_DIR$/four_day" />
+      <file path="$PROJECT_DIR$/fifth_day" />
+      <file path="$PROJECT_DIR$/first_day" />
+      <file path="$PROJECT_DIR$/first_day/defultParam" />
+      <file path="$PROJECT_DIR$/first_day/namespace" />
+      <file path="$PROJECT_DIR$/first_day/new" />
+      <file path="$PROJECT_DIR$/first_day/overload" />
+      <file path="$PROJECT_DIR$/first_day/reference" />
+      <file path="$PROJECT_DIR$/first_day/string" />
+      <file path="$PROJECT_DIR$/first_day/struct" />
+      <file path="$PROJECT_DIR$/first_day/template" />
+      <file path="$PROJECT_DIR$/first_day/test" />
+      <file path="$PROJECT_DIR$/fourth_day" />
       <file path="$PROJECT_DIR$/second_day" />
+      <file path="$PROJECT_DIR$/sixth_day" />
       <file path="$PROJECT_DIR$/third_day" />
     </sourceRoots>
   </component>
